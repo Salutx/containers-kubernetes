@@ -1,0 +1,8 @@
+# Dockerfile-nginx
+FROM nginx:stable-alpine
+
+# Copy html files to the Nginx html directory
+COPY ./index.html /usr/share/nginx/html/index.html
+
+# Exposes port 80 for the Nginx server
+EXPOSE 80

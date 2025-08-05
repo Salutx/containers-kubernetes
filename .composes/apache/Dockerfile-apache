@@ -1,0 +1,8 @@
+# Dockerfile-apache
+FROM httpd:alpine
+
+# Copy html files to the Apache html directory
+COPY ./index.html /usr/local/apache2/htdocs/index.html
+
+# Exposes port 80 for the Apache server
+EXPOSE 80
